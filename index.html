@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Replica</title>
+</head>
+<body>
+    <header class="main_header">
+        <h1>9.</h1>
+        <button class="menu_icon" onclick="toggleMenu()">&#9776;</button>
+    </header>
+
+    <div class="side_window">
+        <button class="close_button" onclick="toggleMenu()">&#10006;</button>
+        <nav>
+            <ul>
+                <li><a href="#section1">Section 1</a></li>
+                <li><a href="#section2">Section 2</a></li>
+                <li><a href="#section3">Section 3</a></li>
+                <li><a href="#section4">Section 4</a></li>
+                <li><a href="#section5">Section 5</a></li>
+                <li><a href="#section6">Section 6</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <section id="section1">
+        <div class="section_info">
+            <h2>Heading</h2>
+            <h1>Introduction</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exerxitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </p>
+        </div>
+    </section>
+
+    <section id="section2">
+        <div class="shape">
+        </div>
+        <div class="section_info2">
+            <h2>Heading</h2>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exerxitation ullamco laboris nisi ut ali
+            </p>
+            <div>LINK</div>
+        </div>
+    </section>
+
+    <section id="section3">
+        <div class="section_info3">
+            <h2>Heading</h2>
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod tempor incididunt ut labore et dolore magna.
+            </p>
+            <div>LINK</div>
+        </div>
+        <div class="shape">
+        </div>
+    </section>
+
+    <section id="section4">
+        <div class="grid-div">
+            <div class="info-block1">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod
+                </p>
+            </div>
+
+            <div class="dropdown_box">
+                <h1>Select</h1>
+                <button class="dropdown_button" onclick="toggleDropdown()">&#9662;</button>
+                <div class="dropdown_content">
+                    <p>Item 1</p>
+                    <p>Item 2</p>
+                    <p>Item 3</p>
+                </div>
+            </div>
+
+            <div class="info-block1">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod
+                </p>
+            </div>
+
+            <div class="info-block2">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod
+                </p>
+            </div>
+
+            <div class="info-block1">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod
+                </p>
+            </div>
+
+            <div class="info-block">
+                <h2>Title</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                    eiusmod
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section id="section5">
+        <div class="info">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod.
+            </p>
+            <div class="link-button">LINK</div> 
+        </div>
+
+        <div class="info">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod.
+            </p>
+            <div class="link-button">LINK</div> 
+        </div>
+
+        <div class="info">
+            <h1>Title</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do 
+                eiusmod.
+            </p>
+            <div class="link-button">LINK</div> 
+        </div>
+    </section>
+
+    <section id="section6">
+        <div class="block1"></div>
+        <div class="block2"></div>
+        <div class="block3"></div>
+        <div class="block4"></div>
+        <div class="block5"></div>
+        <div class="block6"></div>
+        <div class="block-base"></div>
+    </section>
+
+    <script>
+        /* Toggles the visablity of the side window */
+        function toggleMenu() {
+            const menu = document.querySelector('.side_window');
+            menu.classList.toggle('show');  
+        }
+
+        /* Toggles the dropdown for the item selection */
+        function toggleDropdown() {
+            const dropdowncontent = document.querySelector('.dropdown_content');
+            dropdowncontent.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
